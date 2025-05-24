@@ -4,12 +4,9 @@ function navigateTo(section) {
 
   switch (section) {
     case 'play':
-      html = `
-        <h2>Play Now</h2>
-        <p>Loading game...</p>
-        <p><em>Feature under development.</em></p>
-      `;
-      break;
+      // Redirect to the external game link with mods
+      window.location.href = 'https://healingmunch.github.io/Website-Tester/pde1500/?mods=WalkSpeed,FastGameSpeed,ClassicFaces';
+      return; // stop execution so it doesn't overwrite content
     case 'about':
       html = `
         <h2>About the Game</h2>
